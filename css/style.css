@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+nav{
+    padding: 30px;
+    /* 顯示：靈活 */
+    display: flex;
+    /* 均勻排列每個子元素 */
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(0 ,0 ,0 ,0.3);
+    /* 位置：黏住 */
+    position: sticky;
+    /* 黏在上方 */
+    top:0;
+    height: 100px;
+    background-color:rgba(255,255,255,0.8);
+    /* 深度：數字越大位置越前面 */
+    z-index: 1;
+}
+
+nav ol li{
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 46px;
+    font-size: 16px;
+}
+
+nav ol li a{
+    color: #000;
+    text-decoration: none;
+}
+
+nav ol li a:hover{
+    color: #9F0203;
+}
+
+#logo img{
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: #9F0203;
+    padding: 10px;
+    /* 圓形 */
+    border-radius: 50%;
+}
+
+#logo{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 900;
+    font-size: 32px; 
+}
+
+#banner{
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+    /* 背景填滿整個元素 */
+    background-size: cover;
+    margin-top: -100px;
+    /* 變形 */
+    transform: scale(1);
+    /* 轉換的動畫參數 */
+    transition: 3s;
+}
+
+#banner:hover{
+    transform: scale(1.15);
+}
+
+#banner-box{
+    /* 隱藏溢出範圍外的部分 */
+    overflow: hidden;
+}
+
+/* 內容 */
+.content{
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.content h1{
+    color: #9F0203;
+    text-align: center;
+}
+
+.content p{
+    line-height: 2;
+    margin: 30px 0;
+}
+
+.content ul li{
+    margin: 30px 0;
+}
+
+.red-box{
+    background-color: #9F0203;
+    color: #fff;
+}
+
+.red-box h1{
+    color: #fff;
+}
+
+footer{
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
